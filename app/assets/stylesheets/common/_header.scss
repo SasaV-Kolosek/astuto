@@ -34,6 +34,10 @@
     }
   }
 
+  .brandDisabled {
+    pointer-events: none;
+  }
+
   .navbarToggler {
     @extend .navbar-toggler;
 
@@ -54,11 +58,16 @@
       
       font-size: 14px;
       text-align: left;
+
+      a:hover { color: var(--primary-color); }
+      
+      &.active {
+        @extend .badgeLight;
+
+        a { color: var(--primary-color) !important };
+      }
     }
 
-    .nav-item.active {
-      @extend .badgeLight;
-    }
   }
 
   .profileNav {
@@ -75,12 +84,25 @@
     }
 
     .fullname {
-      color: $astuto-black;
+      color: var(--astuto-black);
       vertical-align: middle;
     }
   }
 
+  .boards-dropdown {
+    .dropdown-item {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+
   .dropdown-item:active {
-    background-color: $primary-color;
+    color: white !important;
+    background-color: var(--primary-color);
+  }
+
+  .dropdown-header {
+    text-transform: uppercase;
+    color: var(--astuto-grey);
   }
 }

@@ -4,27 +4,17 @@
     .flex-column,
     .mr-3;
 
-  $like_button_size: 11px;
-
-  .likeButton {
-    @extend .mb-2;
-
-    border-left: $like_button_size solid transparent;
-    border-right: $like_button_size solid transparent;
-    border-bottom: $like_button_size solid rgba(35,35,35,.2);
-
-    &:hover {
-      border-bottom-color: $primary-color;
-      cursor: pointer;
-    }
-  }
-
-  .likeButton.liked {
-    border-bottom-color: $primary-color;
+  .likeButton:hover {
+    cursor: pointer;
+    transform: scale(1.15);
   }
 
   .likeCountLabel {
+    @extend .mt-2;
+    
     text-align: center;
-    font-size: 17px;
   }
+
+  .likeCountLabel-medium { font-size: 18px; }
+  .likeCountLabel-large { font-size: 22px; }
 }

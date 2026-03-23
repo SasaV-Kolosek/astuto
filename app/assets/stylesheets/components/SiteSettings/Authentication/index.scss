@@ -1,6 +1,4 @@
 .authenticationIndexPage {
-  h2 { @extend .mb-3; }
-
   .oauthProvidersTitle {
     @extend .d-flex;
 
@@ -37,6 +35,12 @@
         @extend .d-flex;
 
         align-self: center;
+      }
+
+      .defaultOAuthDiv {
+        @extend .d-flex;
+
+        .defaultOAuthLabel { @extend .align-self-center; }
       }
     }
   }

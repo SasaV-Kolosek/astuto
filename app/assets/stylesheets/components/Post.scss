@@ -63,14 +63,29 @@
 
         max-height: 170px;
         overflow-y: scroll;
+        overflow-x: hidden;
 
         .likeListItem {
           @extend
+            .d-flex,
             .p-2,
             .my-1;
-  
-          .likeListItemName {
-            @extend .ml-2;
+
+          .gravatar {
+            @extend .align-self-center;
+          }
+
+          .likeListItemUserInfo {
+            @extend
+              .d-flex,
+              .flex-column,
+              .ml-3;
+          }
+
+          .likeListItemEmail {
+            @extend .mutedText;
+
+            font-size: 13px;
           }
         }
       }
@@ -95,7 +110,9 @@
       .mb-3;
 
     .postInfo {
-      @extend .d-flex;
+      @extend
+        .d-flex,
+        .mb-2;
 
       span {
         @extend .mr-2;
@@ -125,7 +142,7 @@
       @extend
         .my-4;
 
-      color: $primary-color;
+      color: var(--astuto-black);
 
       p:last-child {
         @extend .mb-0;
@@ -149,9 +166,18 @@
         @extend .my-3;
       }
 
+      .postDescription {
+        height: 150px;
+        min-height: 150px;
+        resize: vertical;
+      }
+
       .postEditFormButtons {
         @extend .d-flex, .justify-content-end;
       }
+
+      #selectPickerBoard { margin-right: 4px !important; }
+      #selectPickerStatus { margin-left: 4px !important; }
     }
   }
 }
