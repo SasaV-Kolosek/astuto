@@ -72,3 +72,7 @@ A huge thank you to code contributors
 </a>
 
 and [translation contributors](https://crowdin.com/project/astuto/members)!
+
+## License
+
+Astuto is released under the terms of the license specified in the [LICENSE](./LICENSE) file.
