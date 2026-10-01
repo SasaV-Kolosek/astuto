@@ -56,6 +56,7 @@ volumes:
 3. Edit the environment variables to fit your needs
 4. Run `docker compose pull && docker compose up`
 5. You should now have a running instance of Astuto on port 3000. A default user account has been created with credentials email: `admin@example.com`, password: `password`.
+6. Log in with the default account and change its password right away, since the default credentials are publicly known.
 
 ## Contributing
 
