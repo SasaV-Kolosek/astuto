@@ -30,7 +30,7 @@ Documentation website is not online anymore. You can read Astuto's documentation
 0. Ensure you have Docker and Docker Compose installed
 1. Create an empty folder
 2. Inside that folder, create a `docker-compose.yml` file with the following content:
-```
+```yaml
 services:
   db:
     image: postgres:14.5
@@ -49,7 +49,7 @@ services:
       - "3000:3000"
     depends_on:
       - db
-    
+
 volumes:
   dbdata:
 ```
