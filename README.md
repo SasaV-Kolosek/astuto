@@ -72,3 +72,7 @@ A huge thank you to code contributors
 </a>
 
 and [translation contributors](https://crowdin.com/project/astuto/members)!
+
+---
+
+Thank you for your interest in Astuto.
